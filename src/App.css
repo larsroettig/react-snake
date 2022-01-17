@@ -1,0 +1,140 @@
+
+body {
+    background: hsl(0, 0%, 10%);
+
+}
+
+.grid {
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  width: 600px;
+  margin: 8rem auto;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+.cell {
+  flex: 1;
+  text-align: center;
+  font-size: 2em;
+  align-items: center;
+  align-content: center;
+}
+
+.odd {
+  background: #CCF547;
+}
+
+.even {
+  background: #8AEB44;
+}
+
+.controls {
+  margin: 20px auto ;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.button {
+    padding: 20px;
+}
+
+
+.food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+
+}
+
+.snake {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.snake-body {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   margin: auto;
+   background-color: #CD843F;
+}
+
+.snake-head {
+  width: 0px;
+  height: 0px;
+    -webkit-transform:rotate(360deg);
+   border-style: solid;
+
+}
+
+.snake-head-90 {
+   border-width: 0 10px 17.3px 10px;
+   border-color: transparent transparent #CD843F transparent;
+}
+
+.snake-head-180 {
+  border-width: 10px 0 10px 17.3px;
+  border-color: transparent transparent transparent #CD843F;
+}
+
+.snake-head-270 {
+ border-width: 17.3px 10px 0 10px;
+  border-color: #CD843F transparent transparent transparent ;
+}
+
+.snake-head-360 {
+ border-width: 10px 17.3px 10px 0;
+  border-color: transparent #CD843F transparent transparent ;
+}
+
+.game {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: 8rem auto;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 2.3em;
+}
+
+
+.Controls{
+    color: #fff;
+    font-family: sans-serif;
+    position: absolute;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speedControl{
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
